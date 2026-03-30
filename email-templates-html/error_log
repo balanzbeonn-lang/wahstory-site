@@ -1,0 +1,7 @@
+[21-Mar-2025 07:43:04 UTC] PHP Parse error:  syntax error, unexpected identifier "s" in /home/wahstory/public_html/email-templates-html/email-meeting-rejected-user.php on line 361
+[21-Mar-2025 07:43:08 UTC] PHP Parse error:  syntax error, unexpected identifier "s" in /home/wahstory/public_html/email-templates-html/email-meeting-rejected-user.php on line 361
+[24-Mar-2025 07:01:45 UTC] PHP Parse error:  syntax error, unexpected identifier "re" in /home/wahstory/public_html/email-templates-html/email-reschedule-request-user.php on line 363
+[24-Mar-2025 07:01:49 UTC] PHP Parse error:  syntax error, unexpected identifier "re" in /home/wahstory/public_html/email-templates-html/email-reschedule-request-user.php on line 363
+[30-May-2025 05:32:00 UTC] PHP Parse error:  syntax error, unexpected token "\" in /home/wahstory/public_html/email-templates-html/email-wellness-result.php on line 359
+[30-May-2025 05:32:03 UTC] PHP Parse error:  syntax error, unexpected token "\" in /home/wahstory/public_html/email-templates-html/email-wellness-result.php on line 359
+[30-May-2025 05:32:52 UTC] PHP Parse error:  syntax error, unexpected token "\" in /home/wahstory/public_html/email-templates-html/email-wellness-result.php on line 359

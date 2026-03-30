@@ -1,0 +1,10 @@
+[04-Aug-2025 14:05:18 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_unique(): Argument #1 ($array) must be of type array, null given in /home/wahstory/public_html/users/update/update.tools.php:22
+Stack trace:
+#0 /home/wahstory/public_html/users/update/update.tools.php(22): array_unique(NULL)
+#1 {main}
+  thrown in /home/wahstory/public_html/users/update/update.tools.php on line 22
+[04-Aug-2025 14:05:27 Asia/Calcutta] PHP Fatal error:  Uncaught TypeError: array_unique(): Argument #1 ($array) must be of type array, null given in /home/wahstory/public_html/users/update/update.tools.php:22
+Stack trace:
+#0 /home/wahstory/public_html/users/update/update.tools.php(22): array_unique(NULL)
+#1 {main}
+  thrown in /home/wahstory/public_html/users/update/update.tools.php on line 22

@@ -1,0 +1,17 @@
+wellnessapp/ 
+wahspotlight/
+wahcommunity/
+shareyourstory/
+corporate/
+
+wahclub/node_modules/
+wahclub/vendor/
+wahclub/.env
+*.log
+*.zip
+*.tar.gz
+*.sql
+wahclub/uploads/
+wahclub/storage/
+wahclub/cache/
+wahclub/tmp/

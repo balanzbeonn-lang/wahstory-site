@@ -1,0 +1,2 @@
+[19-May-2025 15:06:11 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wahstory/public_html/wahclub/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php on line 223
+[19-May-2025 15:06:11 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in Unknown on line 0

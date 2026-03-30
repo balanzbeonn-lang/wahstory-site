@@ -1,0 +1,1845 @@
+@include('head')
+  
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+<style>
+    .icon-box.toolimage span{
+        font-size: 44px;
+        padding: 14px;
+        font-family: 'FontAwesome';
+        color: #fff;
+        border: 1px solid #333;
+        border-radius: 20px;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .skill-inner:hover .icon-box.toolimage span{
+        border-color: #fff;
+    }
+    a{
+        text-decoration : none;
+    }
+</style>
+
+@include('header')
+
+    <main class="site-content" >
+        <!-- HERO SECTION START -->
+        <section class="hero-section d-flex align-items-center pb-3" id="aboutme-section" style="background-color: #0f0715;">
+             
+            <div class="container">
+                <div class="row align-items-center">                     
+                    <div class="col-md-12">
+						<h4 class="second-title"> Search by Categories</h4>
+					</div>
+                    <div class="col-md-12">
+						
+						 <div class="toptags-widget wow fadeInRight" data-wow-delay=".5s" data-wow-items="3">
+                            <div class="owl-carousel toptags-carousel" ata-items="3">
+                                
+                                 
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/professionals" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-user-tie"></i> Professionals </h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/legal-financial-experts" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-scale-balanced"></i> Legal & Financial Experts </h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/influencers-artists" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											
+											<h3 class="resume-title"> <i class="fa-sharp fa-thin fa-people-arrows"></i> Influencers & Artists </h3>
+											
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget"> 
+										<a href="/wahclub/members/founders-entrepreneurs" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-briefcase"></i> Founders & Entrepreneurs</h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/wellness" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-spa"></i> Wellness </h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/coaches" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-chalkboard-teacher"></i> Coaches </h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/education-counsellors" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-user-graduate"></i> Education Counsellors </h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/sports" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-medal"></i> Sports </h3>
+										</a> 
+									</div>									
+                                </div>
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/marketing" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-sharp fa-thin fa-bullhorn"></i> Marketing</h3>
+										</a> 
+									</div>									
+                                </div>
+								
+								<div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/architects-designers" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-buildings"></i> Architects & Designers </h3>
+										</a> 
+									</div>									
+                                </div>
+								<div class="tags-item">			 					
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/hospitality" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-plate-utensils"></i> Hospitality</h3>
+										</a> 
+									</div>									
+                                </div> 
+                                
+                                <div class="tags-item">								
+                                    <div class="resume-widget">
+										<a href="/wahclub/members/practitioners" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+											<h3 class="resume-title"> <i class="fa-thin fa-stethoscope"></i> Practitioners </h3>
+										</a> 
+									</div>									
+                                </div>
+                                 
+                            </div>
+                        </div>
+						
+                    </div>
+                </div>
+				
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+		
+		<section class="resume-section category-sliders pt-2 pb-2" style="background: #0f0715">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Professionals    </h2>
+							  <div data-wow-delay="0.4s" class="text-center wow fadeInLeft">
+								<!-- <p>Empowering people in new a digital journey with my super services</p> -->    
+							</div>
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($users->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f74f8">
+          
+                @foreach($users as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+    						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/>
+					    @endif
+						
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						 <x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$connections" /> 
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/professionals" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+	    
+	   </div>
+	 </section>
+			
+		<section class="resume-section category-sliders pt-2 pb-2" style="background: #0f0715">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Founders & Entrepreneurs    </h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($FoundersCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7hjfhgfu">
+          
+                @foreach($FoundersCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$FounderConnections" /> 
+						
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/founders-entrepreneurs" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+				
+			
+	<!--Influencers & Artists ######################################	-->
+	<!--Influencers & Artists ######################################	-->
+	
+	<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Influencers & Artists   </h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($InfluencersCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7infbgg">
+          
+                @foreach($InfluencersCatUsers as $Influencer)
+                
+        @php
+		    $InfluencerID = $Influencer->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($InfluencerID) {
+                $query->where('user_id_1', $InfluencerID)
+                      ->orWhere(function ($query) use ($InfluencerID) {
+                          $query->where('user_id_2', $InfluencerID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $Influencer->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$Influencer->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $Influencer->slug_username }}" title="{{ $Influencer->firstname }} {{ $Influencer->lastname }}">{{ $Influencer->firstname }} {{ $Influencer->lastname }} 
+						@if($Influencer->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+					    
+						</a></h4>
+			    @if($Influencer->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $Influencer->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $Influencer->views  * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $Influencer->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($Influencer->skills->isNotEmpty())
+					@foreach($Influencer->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						 
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$InfluencerConnections" />
+						 
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/influencers-artists" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Influencers & Artists Ends ######################################	-->
+	<!--Influencers & Artists Ends ######################################	-->
+	
+	<!--Wellness ######################################	-->
+	<!--Wellness ######################################	-->
+	
+	<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Wellness   </h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($WellnessCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7infbgg">
+          
+                @foreach($WellnessCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						 
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$WellnessConnections" />
+						 
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/wellness" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Wellness Ends ######################################	-->
+	<!--Wellness Ends ######################################	-->
+	
+	
+	
+	<!--Coaches ######################################	-->
+	<!--Coaches ######################################	-->
+	
+	<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Coaches    </h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($CoachCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7infbgg">
+          
+                @foreach($CoachCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+					<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$CoachConnections" />
+					
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/coaches" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Coaches Ends ######################################	-->
+	<!--Coaches Ends ######################################	-->
+	
+	
+	<!--Marketing ######################################	-->
+	<!--Marketing ######################################	-->
+	
+	<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Marketing    </h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($MarketingCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7infbgg">
+          
+                @foreach($MarketingCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						 
+			<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$MarketingConnections" />
+						 
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/marketing" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Marketing Ends ######################################	-->
+	<!--Marketing Ends ######################################	-->
+	
+	
+	<!--Hospitality ######################################	-->
+	<!--Hospitality ######################################	-->
+	
+	<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">
+								  Hospitality    </h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($HospitalityCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7infbgg">
+          
+                @foreach($HospitalityCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$HospitalityConnections" />
+						
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/hospitality" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Hospitality Ends ######################################	-->
+	<!--Hospitality Ends ######################################	-->
+				
+	
+	<!--Architect ######################################	-->
+	<!--Architect ######################################	-->
+	
+	<div class="row">
+					<div class="col-md-12">
+						
+						<div class="section-header mb-0">
+							<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">Architects & Designers</h2>
+							  
+						</div>
+						
+						<hr style="border: 0;">
+			
+					</div>
+				</div>
+			
+			@if($ArchitectCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7infbgg">
+          
+                @foreach($ArchitectCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+				
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$ArchitectConnections" />
+				
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/architects-designers" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Architect Ends ######################################	-->
+	<!--Architect Ends ######################################	-->
+				
+				
+			</div>  
+        </section>
+		
+        <!-- SERVICES SECTION START -->
+        <section style="background: #050709;" class="py-5" id="MoreSkills">
+            <div class="container">
+                                 
+				<div class="row ">
+					<div class="col-lg-12 pb-4" style="justify-content: space-between; display: flex;">	
+				        <h4 class="second-title mb-0"> Top Skills</h4> 
+                        <!--<a href="javascript:void(0);" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>-->
+					</div>
+				</div>
+				
+				
+				        
+				
+				
+				<div class="row skill-tabs">
+				
+				@if ($TopSkills)
+				    @foreach ($TopSkills as $skill)
+					<div class="col-lg-4">						
+						<div class="resume-widget">
+                            <a href="/wahclub/skills/{{ $skill->slug }}" class="resume-item wow fadeInRight" data-wow-delay=".5s">
+							
+								<div class="icon">
+									<i class="fa-thin fa-head-side-brain"></i>
+								</div>
+								
+                                <div class="time">
+                                    {{ $skill->skill }}
+                                </div>
+								
+								<div class="lasticon">
+									<i class="fa fa-arrow-right"></i>
+								</div>
+                                 
+                            </a>
+                        </div>				
+					</div>
+				
+				    @endforeach
+				@endif
+					
+					 
+					
+				</div>
+				
+            </div>
+        </section>
+        <!-- SERVICES SECTION END -->
+
+		<section class="resume-section category-sliders pt-5 pb-2" style="background: #0f0715">
+            <div class="container">
+				   
+				 
+	<!--Education ######################################	-->
+	<!--Education ######################################	-->
+	
+            <div class="row">
+				<div class="col-md-12">
+					
+					<div class="section-header mb-0">
+						<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">Education Counsellors</h2>
+						  
+					</div>
+					
+					<hr style="border: 0;">
+		
+				</div>
+			</div>
+			
+			@if($eduCounsellorCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7Educnsl">
+          
+                @foreach($eduCounsellorCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }}
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+			    
+			    
+			    
+			    
+			    
+			    
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$eduCounsellorConnections" />
+						
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/education-counsellors" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Education Ends ######################################	-->
+	<!--Education Ends ######################################	-->
+	
+	
+				 
+				
+			</div>  
+        </section>
+
+
+		       <!-- SKILLS SECTION START -->
+		<section class="py-5" style="background: #050709">
+			<div class="container">
+
+				<div class="row ">
+					<div class="col-lg-12 pb-4" style="justify-content: space-between; display: flex;">	
+						<h4 class="second-title mb-0"> Tools and technologies</h4> 
+						<!--<a href="javascript:void(0);" class="view-more-btn">
+							View More <i class="fa-solid fa-arrow-up-right"></i>
+						</a>-->
+					</div>
+				</div>
+				
+	
+
+				<div class="row">
+					
+					<div class="col-md-12">
+						<div class="skills-widget d-flex flex-wrap justify-content-between align-items-center">
+							
+					@if ($TopTools)
+				        @foreach ($TopTools as $tool)
+				            @if($tool->tool == 'Other')
+				                @continue
+				            @endif
+							<div class="skill-item wow fadeInUp" data-wow-delay=".3s">
+								<div class="skill-inner">
+									<div class="icon-box toolimage">
+						<a href="/wahclub/tools/{{ $tool->slug }}">
+						@if ($tool->image)
+                                        <img src="{{ asset('public/img/tools/'. $tool->image ) }}" alt="{{ $tool->tool }}">
+                        @else
+                                        <span>{{ strtoupper(substr($tool->tool, 0, 1)) }}</span>
+                        @endif  
+									</div>
+									<div class="number">{{ $tool->tool }}</div>
+						</a>
+								</div> 
+							</div>
+                        @endforeach
+    				@endif							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SKILLS SECTION END -->
+
+		<section class="resume-section category-sliders pt-5 pb-2" style="background: #0f0715">
+            <div class="container">
+				 
+				 
+		    
+		    		 
+	<!--Sports ######################################	-->
+	<!--Sports ######################################	-->
+	
+            <div class="row">
+				<div class="col-md-12">
+					
+					<div class="section-header mb-0">
+						<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">Sports</h2>
+						  
+					</div>
+					
+					<hr style="border: 0;">
+		
+				</div>
+			</div>
+			
+			@if($SportsCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7Educnsl">
+          
+                @foreach($SportsCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						
+				<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$SportsConnections" />
+						
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/sports" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Sports Ends ######################################	-->
+	<!--Sports Ends ######################################	-->
+		    
+				 
+		    		 
+	<!--Financial ######################################	-->
+	<!--Financial ######################################	-->
+	
+            <div class="row">
+				<div class="col-md-12">
+					
+					<div class="section-header mb-0">
+						<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">Legal & Financial Experts</h2>
+						  
+					</div>
+					
+					<hr style="border: 0;">
+		
+				</div>
+			</div>
+			
+			@if($LegalFinancialCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7Educnsl">
+          
+                @foreach($LegalFinancialCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						
+					<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$LegalFinancialConnections" />
+						
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/legal-financial-experts" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Financial Ends ######################################	-->
+	<!--Financial Ends ######################################	-->
+		    			 
+		    		 
+	<!--Practitioners ######################################	-->
+	<!--Practitioners ######################################	-->
+	
+            <div class="row">
+				<div class="col-md-12">
+					
+					<div class="section-header mb-0">
+						<h2 data-wow-delay="0.3s" class="section-title wow fadeInLeft">Practitioners</h2>
+						  
+					</div>
+					
+					<hr style="border: 0;">
+		
+				</div>
+			</div>
+			
+			@if($PractitionersCatUsers->isNotEmpty())
+				
+				<div data-wow-delay="0.5s" class="categories-widget carouselWrap wow fadeInRight mb-2" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="3000">
+
+                <div class="owl-carousel category-carousel" id="testiCarousel-f5f7Educnsl">
+          
+                @foreach($PractitionersCatUsers as $user)
+                
+        @php
+		    $userID = $user->id;
+            $myconnections = \App\Models\Connection::where(function ($query) use ($userID) {
+                $query->where('user_id_1', $userID)
+                      ->orWhere(function ($query) use ($userID) {
+                          $query->where('user_id_2', $userID);
+                      });
+            })->get();
+        @endphp
+                
+					<div class="category-item">
+					   <div>
+					       <a href="/wahclub/{{ $user->slug_username }}">
+						    <img class="test-img" decoding="async" src="{{ asset('public/img/photos/'.$user->photo) }}" alt="" />
+						    </a>
+					  </div>
+					  <div class="content">
+						<h4 class="name"> <a href="/wahclub/{{ $user->slug_username }}" title="{{ $user->firstname }} {{ $user->lastname }}">{{ $user->firstname }} {{ $user->lastname }} 
+						@if($user->subscription_status === 'paid')
+						<img decoding="async" src="{{ asset('public/img/shapes/premium-tag.png') }}" style="margin-left: 3px; width: 20px; height: 20px; display: inline"/> 
+					    @endif
+						</a></h4>
+			    @if($user->experiences->isNotEmpty())
+				    
+			     @php
+                    $sortedExp = $user->experiences->sortByDesc(function ($experience) {
+                        return $experience->durationfrom ?? $experience->present;
+                    });
+                    $firstExps = $sortedExp->first();
+                @endphp
+						<p class="profile-current-experience" title="{{ $firstExps->role }}">• {{ $firstExps->role }}</p>
+			     
+			    @endif
+						<hr class="top-line">
+						
+						<div class="category-short-stats">
+    						<span title="Connections">
+    						    <i class="fa-sharp fa-thin fa-user-plus"></i> 
+    					 @php
+                            // Check the number of connections
+                            $connectionCount = $myconnections->count();
+                        @endphp
+    						 {{ $connectionCount }}
+    						
+    						</span>
+    						<span title="Profile Views">
+    						    <i class="fa-thin fa-eye"></i> {{ $user->views * 27 }} +
+    						</span> 
+    						<span title="Experience">
+    						    <i class="fa-thin fa-sharp fa-suitcase"></i> {{ $user->totalexperience }} years+
+    						</span>
+						</div>
+						
+						<hr class="btm-line">
+						<div class="quote">
+							<p style="margin-bottom: 4px;">My Expertise:</p>
+							<div class="skill-section">
+			 @if($user->skills->isNotEmpty())
+					@foreach($user->skills as $skill)
+							<a href="/wahclub/skills/{{ $skill->slug }}" class="skill-more-btn" title="{{ $skill->skill }}">
+							   {{ $skill->skill }}
+							</a>
+					@endforeach
+			@endif
+						</div>
+						</div>
+						
+			<x-connect-button :loggedinUser="$loggedinUser" :user="$user" :connections="$PractitionerConnections" />
+						
+					</div>
+					  
+                    
+					</div>
+					
+				@endforeach
+				  
+                </div>
+                
+                    <div class="text-center py-4">
+                        <a href="/wahclub/members/practitioners" class="view-more-btn">
+                            View More <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    
+				</div>
+				
+			@endif
+			
+	<!--Practitioners Ends ######################################	-->
+	<!--Practitioners Ends ######################################	-->
+		    
+				
+			</div>  
+        </section>
+     
+    </main>
+    
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background: #140c1c; ">
+      
+      <div class="modal-body">
+          <button type="button" class="btn-close login-popup-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times"></i>
+          </button>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                
+                <h3 class="h5"> Welcome to WAHClub</h3>
+                
+                <p class="small"> Login & become a WAHClub member for professional recommendations, real-time engagement & other exclusive features.
+                </p>
+                
+            </div>
+            
+            <div class="col-lg-12">
+                @if(isset($_SESSION['userid']))
+                    <a href="/users/" class="btn tj-btn-primary p-3"><i class="fa fa-user" style="transform: none;"></i> Get me in WAHClub</a>
+                @else
+                    <a href="/login?rurl=/wahclub/" class="btn tj-btn-primary p-3"><i class="fa fa-user" style="transform: none;"></i> Login to Connect</a>
+                
+                @endif
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div> 
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="paidFeature" tabindex="-1" aria-labelledby="paidFeatureLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background: #140c1c; ">
+      
+      <div class="modal-body">
+          <button type="button" class="btn-close login-popup-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times"></i>
+          </button>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                
+                <h3 class="h5"> Welcome to WAHClub</h3>
+                
+                <p class="small"> Please upgrade your account to unlock exclusive features.
+                </p>
+                
+            </div>
+            
+            <div class="col-lg-12">
+                @if(isset($_SESSION['userid']))
+                    <a href="/users/subscriptionplan.php?rurl={{ request()->getRequestUri() }}&&clubid={{ $loggedinUser->id }}" class="btn tj-btn-primary p-3"><i class="fa-solid fa-stars" style="transform: none;"></i>  Upgrade Now</a>
+                @else
+                    <a href="/login?rurl=/wahclub/" class="btn tj-btn-primary p-3"><i class="fa fa-user" style="transform: none;"></i> Login to Connect</a>
+                
+                @endif
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div> 
+
+@include('footer')
+
+@if(isset($_SESSION['userid']))
+    <script>
+        $(document).ready(function(){
+             
+            $('.connectprofile-btn').click(function(){
+            var clubmemberid = $(this).data("memberid");
+            
+            var useremail = "{{ $_SESSION['email'] }}"; 
+            
+            var $button = $(this);
+            
+                $button.find('.fa-plus').remove();
+                
+                
+            event.preventDefault();
+            $button.off('click');
+            $button.addClass('disabled');
+            
+             $button.append(" <i class='fa fa-spinner fa-spin'></i>");
+            
+            var csrfToken = $('meta[name="csrf-token"]').attr('content');
+            
+                $.ajax({
+                    url: '/wahclub/connectwithclubmember', // Route to your method
+                    type: 'POST',
+                    data: JSON.stringify({
+                        memberid: clubmemberid,
+                        useremail: useremail
+                    }), 
+                    contentType: 'application/json',
+                    processData: false,
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken  // Include CSRF token in the request header
+                    },
+                    success: function(response) {
+                        
+                        if(response.status == 'success') {
+                            $button.next('.pending-connection').css("display", "block"); 
+                            $button.css("display", "none"); 
+
+                        }
+                        
+                        console.log(response.message);
+                    },
+                    error: function(xhr) {
+                      alert('Error: ' + xhr.responseJSON.message);
+                    }
+              });
+                  
+            })
+        });
+    </script>
+@endif
+
+
+@include('footer-bottom')

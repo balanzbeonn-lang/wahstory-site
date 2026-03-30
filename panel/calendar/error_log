@@ -1,0 +1,22 @@
+[08-Nov-2023 12:07:35 Asia/Calcutta] PHP Notice:  Undefined variable: EventDayValue in /home/w75op26g4yl8/public_html/wahstory.com/panel/calendar/calendar.php on line 257
+[08-Nov-2023 12:07:40 Asia/Calcutta] PHP Notice:  Undefined variable: EventDayValue in /home/w75op26g4yl8/public_html/wahstory.com/panel/calendar/calendar.php on line 257
+[07-Mar-2024 12:34:02 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 12
+[07-Mar-2024 12:34:02 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 13
+[07-Mar-2024 12:34:02 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 14
+[07-Mar-2024 12:34:02 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 15
+[07-Mar-2024 12:34:02 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 16
+[07-Mar-2024 12:34:07 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 12
+[07-Mar-2024 12:34:07 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 13
+[07-Mar-2024 12:34:07 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 14
+[07-Mar-2024 12:34:07 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 15
+[07-Mar-2024 12:34:07 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 16
+[07-Mar-2024 12:34:19 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 12
+[07-Mar-2024 12:34:19 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 13
+[07-Mar-2024 12:34:19 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 14
+[07-Mar-2024 12:34:19 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 15
+[07-Mar-2024 12:34:19 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 16
+[28-Mar-2024 12:37:55 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 12
+[28-Mar-2024 12:37:55 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 13
+[28-Mar-2024 12:37:55 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 14
+[28-Mar-2024 12:37:55 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 15
+[28-Mar-2024 12:37:55 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/wahstory/public_html/panel/calendar/ajax.php on line 16

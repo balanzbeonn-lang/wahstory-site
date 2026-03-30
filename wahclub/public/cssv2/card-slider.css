@@ -1,0 +1,198 @@
+
+.category-item {
+    position: relative;
+    perspective: 1200px; 
+    margin: 20px;
+    border-radius: 18px; 
+    overflow: hidden; 
+}
+
+.category-item > div {
+    transition: transform 0.5s ease, box-shadow 0.5s ease; 
+    transform-style: preserve-3d; 
+}
+
+.category-item:hover > div {
+    transform: translateY(-15px) ;
+    -webkit-box-shadow: 0 20px 15px -15px var(--tj-theme-primary);
+    -moz-box-shadow: 0 20px 15px -15px var(--tj-theme-primary);
+    box-shadow: 0 20px 15px -15px var(--tj-theme-primary);
+	/*box-shadow: 0 21px 20px #f12b59;*/
+    /*box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);*/
+}
+
+.test-img {
+    width: 100%; /* Full-width image */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.5s ease; /* Smooth zoom effect */
+}
+
+.category-item:hover .test-img {
+    transform: scale(1.1);
+}
+
+.content {
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 10px 20px 0px var(--tj-theme-primary);
+}
+
+.categories-widget .category-item {
+	background: var(--tj-theme-accent-2);
+	max-width: 300px;
+	width: 100%;
+	border-radius: 18px; 
+}
+
+
+.categories-widget .category-item img{
+	border-radius: 10px;
+	-o-object-fit: cover;
+    object-fit: cover;
+    height: 223px;
+}
+
+.categories-widget .category-item .content{
+	padding: 25px;
+	min-height: 330px;
+}
+ 
+.categories-widget .category-item .quote {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+.categories-widget .category-item .name {
+	font-size: 15px;
+	margin-bottom: 10px;
+	color: var(--tj-white);
+	text-transform: capitalize;
+}
+.categories-widget .category-item span.designation {
+	font-size: 14px;
+	display: block;
+}
+
+
+.profile-current-experience {
+    margin-bottom: 0rem;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--tj-theme-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category-short-stats { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.category-short-stats span{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.categories-widget .category-item .quote {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.top-line{
+    border: none;          
+    height: 3px;          
+    background-color:var(--tj-theme-primary);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+.btm-line{
+            border: none;          
+            height: 3px;          
+            background-color:var(--tj-theme-primary);
+            width: 100%; 
+            margin-top: 1px;
+            margin-bottom: 10px;
+}
+
+ 
+
+.skill-more-btn:hover {
+    transform: translateY(-1px); 
+    background-color: var(--tj-theme-primary);
+    color: #fff; 
+}
+
+.skill-more-btn{
+    color: var(--tj-theme-primary); 
+    text-decoration:none;
+    border: 1px solid var(--tj-theme-primary);
+    padding: 4px 4px;
+    border-radius: 5px;
+    font-size: 11px; 
+    display: inline-block;
+    max-width: 47%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background .25s ease, color 0.3s ease, transform 0.3s ease; /* Transition for links */
+}
+.skill-more-btn:not(:first-child){
+    margin-left: 4px;  
+}
+.skill-more-btn:last-child{
+    max-width: 98%;
+    margin-left: 0px; 
+}
+
+.designation.connect-btns a.btn {
+    margin-top: 10px;
+    display: block;
+}
+ 
+.designation.connect-btns a.btn {
+    margin-top: 10px;
+    display: block;
+}
+.designation a.btn {
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+    .view-more-btn {
+        color: var(--tj-theme-primary);
+        text-decoration: none;
+        border: 1px solid var(--tj-theme-primary);
+        padding: 5px 14px;
+        border-radius: 15px;
+        font-size: 13px;
+        transition: background .25s ease, color .25s ease;
+}
+    .view-more-btn:hover{
+        background-color: var(--tj-theme-primary);
+        color: #fff; 
+
+    }
+
+    @keyframes slideBounce {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,295 @@
+[03-Feb-2020 09:28:07 Etc/GMT] PHP Warning:  require_once(../db/postClass.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/addQA.php on line 4
+[03-Feb-2020 09:28:07 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '../db/postClass.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/addQA.php on line 4
+[03-Feb-2020 09:28:23 Etc/GMT] PHP Warning:  require_once(.../db/postClass.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/addQA.php on line 4
+[03-Feb-2020 09:28:23 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '.../db/postClass.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/addQA.php on line 4
+[03-Feb-2020 09:30:59 Etc/GMT] PHP Warning:  require_once(../db/postClass.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/delQA.php on line 7
+[03-Feb-2020 09:30:59 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '../db/postClass.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/delQA.php on line 7
+[03-Feb-2020 10:08:07 Etc/GMT] PHP Warning:  require_once(../db/postClass.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/accept-post.php on line 5
+[03-Feb-2020 10:08:07 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '../db/postClass.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/accept-post.php on line 5
+[03-Feb-2020 16:00:20 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/techmbae/public_html/wah_story/pannel/actions/boost.php on line 10
+[03-Feb-2020 16:00:20 Asia/Calcutta] PHP Notice:  Undefined index: section in /home/techmbae/public_html/wah_story/pannel/actions/boost.php on line 10
+[03-Feb-2020 16:00:20 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1443
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1443): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/pannel/actions/boost.php(10): Post->boostPost(NULL, NULL)
+#2 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1443
+[03-Feb-2020 10:33:19 Etc/GMT] PHP Warning:  require_once(../db/postClass.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/unboost.php on line 5
+[03-Feb-2020 10:33:19 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '../db/postClass.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/unboost.php on line 5
+[03-Feb-2020 16:21:53 Asia/Calcutta] PHP Warning:  include_once(navBar.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/update.php on line 31
+[03-Feb-2020 16:21:53 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'navBar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/update.php on line 31
+[03-Feb-2020 16:22:07 Asia/Calcutta] PHP Warning:  include_once(navBar.php): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/pannel/actions/update.php on line 31
+[03-Feb-2020 16:22:07 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'navBar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/techmbae/public_html/wah_story/pannel/actions/update.php on line 31
+[04-Feb-2020 14:09:57 Asia/Calcutta] PHP Notice:  Undefined index: expire in /home/techmbae/public_html/wah_story/db/postClass.php on line 23
+[04-Feb-2020 14:11:41 Asia/Calcutta] PHP Notice:  Undefined index: expire in /home/techmbae/public_html/wah_story/db/postClass.php on line 23
+[10-Feb-2020 08:01:43 Etc/GMT] PHP Notice:  Undefined variable: postObj in /home/techmbae/public_html/wah_story/pannel/actions/compaign.php on line 2
+[10-Feb-2020 08:01:43 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function getCompaign() on null in /home/techmbae/public_html/wah_story/pannel/actions/compaign.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/techmbae/public_html/wah_story/pannel/actions/compaign.php on line 2
+[10-Feb-2020 15:28:57 Asia/Calcutta] PHP Notice:  Undefined variable: post in /home/techmbae/public_html/wah_story/pannel/actions/delVideo.php on line 5
+[10-Feb-2020 15:28:57 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function delYoutubeVid() on null in /home/techmbae/public_html/wah_story/pannel/actions/delVideo.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/techmbae/public_html/wah_story/pannel/actions/delVideo.php on line 5
+[19-Feb-2020 14:02:29 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/company_campaigns/BbQC2B5407565528.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 867
+[19-Feb-2020 14:02:29 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpmagugh' to '../images/company_campaigns/BbQC2B5407565528.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 867
+[19-Feb-2020 14:04:31 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/company_campaigns/01524606661.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 867
+[19-Feb-2020 14:04:31 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpIxL2RN' to '../images/company_campaigns/01524606661.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 867
+[19-Feb-2020 14:04:43 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/company_campaigns/01584091360.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 867
+[19-Feb-2020 14:04:43 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php2F334t' to '../images/company_campaigns/01584091360.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 867
+[19-Feb-2020 18:02:25 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/company_campaigns/download905566754.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[19-Feb-2020 18:02:25 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpH3SOU5' to '../images/company_campaigns/download905566754.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[19-Feb-2020 18:02:25 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Company_Campaign' where id = 1' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1575
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1575): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/db/postClass.php(1547): Post->delImg('Company_Campaig...', '1', 'company_campaig...')
+#2 /home/techmbae/public_html/wah_story/pannel/actions/update_company_campaign.php(5): Post->updateCompanyCampaign()
+#3 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1575
+[19-Feb-2020 18:02:57 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/company_campaigns/faceu_0_202001191751358282073406982.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[19-Feb-2020 18:02:57 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpYblUkk' to '../images/company_campaigns/faceu_0_202001191751358282073406982.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[19-Feb-2020 18:02:57 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Company_Campaign' where id = 1' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1575
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1575): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/db/postClass.php(1547): Post->delImg('Company_Campaig...', '1', 'company_campaig...')
+#2 /home/techmbae/public_html/wah_story/pannel/actions/update_company_campaign.php(5): Post->updateCompanyCampaign()
+#3 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1575
+[19-Feb-2020 18:04:06 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Company_Campaign' where id = 1' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1575
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1575): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/db/postClass.php(1547): Post->delImg('Company_Campaig...', '1', 'company_campaig...')
+#2 /home/techmbae/public_html/wah_story/pannel/actions/update_company_campaign.php(5): Post->updateCompanyCampaign()
+#3 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1575
+[19-Feb-2020 18:05:31 Asia/Calcutta] PHP Warning:  unlink(../images/company_campaigns/0262555954.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1579
+[19-Feb-2020 18:06:02 Asia/Calcutta] PHP Warning:  unlink(../images/company_campaigns/demojpg261985555.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1579
+[19-Feb-2020 18:08:04 Asia/Calcutta] PHP Warning:  unlink(../../images/company_campaigns/demojpg1105679120.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1579
+[20-Feb-2020 13:16:03 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/testimonial/BbQC2B51959737908.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[20-Feb-2020 13:16:03 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpCj6t8k' to '../../images/testimonial/BbQC2B51959737908.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[20-Feb-2020 13:16:34 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/testimonial/BbQC2B5438065395.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[20-Feb-2020 13:16:34 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phptKDUD1' to '../../images/testimonial/BbQC2B5438065395.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 678
+[20-Feb-2020 13:16:34 Asia/Calcutta] PHP Warning:  unlink(../../images/testimonials/Dolomites,ItalyrV6BfVtFGf8689004886.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1582
+[20-Feb-2020 13:17:05 Asia/Calcutta] PHP Warning:  unlink(../../images/testimonials/Dolomites,ItalyrV6BfVtFGf8689004886.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1582
+[20-Feb-2020 17:43:51 Asia/Calcutta] PHP Notice:  Undefined index: quopositionte in /home/techmbae/public_html/wah_story/db/postClass.php on line 1788
+[20-Feb-2020 17:43:51 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'position' cannot be null in /home/techmbae/public_html/wah_story/db/postClass.php:1795
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1795): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/pannel/actions/add_team.php(5): Post->addTeam()
+#2 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1795
+[20-Feb-2020 12:34:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/techmbae/public_html/wah_story/db/postClass.php on line 1619
+[21-Feb-2020 14:30:51 Asia/Calcutta] PHP Notice:  Undefined property: Post::$addCompanyCampaig in /home/techmbae/public_html/wah_story/pannel/actions/add_company_compaign.php on line 6
+[21-Feb-2020 14:30:51 Asia/Calcutta] PHP Notice:  Undefined property: Post::$addCompanyCampaig in /home/techmbae/public_html/wah_story/pannel/actions/add_company_compaign.php on line 7
+[21-Feb-2020 14:30:51 Asia/Calcutta] PHP Notice:  Undefined property: Post::$addCompanyCampaig in /home/techmbae/public_html/wah_story/pannel/actions/add_company_compaign.php on line 8
+[21-Feb-2020 14:30:51 Asia/Calcutta] PHP Notice:  Undefined property: Post::$addCompanyCampaig in /home/techmbae/public_html/wah_story/pannel/actions/add_company_compaign.php on line 9
+[21-Feb-2020 14:30:51 Asia/Calcutta] PHP Notice:  Undefined property: Post::$addCompanyCampaig in /home/techmbae/public_html/wah_story/pannel/actions/add_company_compaign.php on line 10
+[21-Feb-2020 14:30:51 Asia/Calcutta] PHP Notice:  Undefined property: Post::$addCompanyCampaig in /home/techmbae/public_html/wah_story/pannel/actions/add_company_compaign.php on line 11
+[21-Feb-2020 14:35:51 Asia/Calcutta] PHP Warning:  unlink(../../images/company_campaigns/LG-Symbol2055899616.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1617
+[28-Feb-2020 13:08:57 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/reactions/download(1)1952185903.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[28-Feb-2020 13:08:57 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phppGxUtT' to '../../images/reactions/download(1)1952185903.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[28-Feb-2020 13:09:25 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/reactions/download(1)363209004.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[28-Feb-2020 13:09:25 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php70sN92' to '../../images/reactions/download(1)363209004.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[28-Feb-2020 13:09:34 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/reactions/download(1)8562271.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[28-Feb-2020 13:09:34 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpGOH3WR' to '../../images/reactions/download(1)8562271.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[28-Feb-2020 13:13:18 Asia/Calcutta] PHP Notice:  Undefined index: msg in /home/techmbae/public_html/wah_story/db/postClass.php on line 1899
+[28-Feb-2020 13:13:26 Asia/Calcutta] PHP Notice:  Undefined index: msg in /home/techmbae/public_html/wah_story/db/postClass.php on line 1899
+[28-Feb-2020 15:37:16 Asia/Calcutta] PHP Notice:  Undefined index: msg in /home/techmbae/public_html/wah_story/db/postClass.php on line 1913
+[28-Feb-2020 15:38:38 Asia/Calcutta] PHP Notice:  Undefined index: msg in /home/techmbae/public_html/wah_story/db/postClass.php on line 1913
+[02-Mar-2020 16:29:33 Asia/Calcutta] PHP Notice:  Undefined index: msg in /home/techmbae/public_html/wah_story/db/postClass.php on line 1913
+[07-Mar-2020 17:19:22 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/extras/Goa-Becah565974422.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[07-Mar-2020 17:19:22 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phppWOGo1' to '../../images/extras/Goa-Becah565974422.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[07-Mar-2020 17:20:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/extras/BbQC2B51721591877.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[07-Mar-2020 17:20:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpYz8pO4' to '../../images/extras/BbQC2B51721591877.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[07-Mar-2020 17:20:38 Asia/Calcutta] PHP Warning:  move_uploaded_file(../../images/extras/BbQC2B51764459667.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[07-Mar-2020 17:20:38 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpldrywr' to '../../images/extras/BbQC2B51764459667.jpg' in /home/techmbae/public_html/wah_story/db/postClass.php on line 692
+[07-Mar-2020 17:40:45 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/techmbae/public_html/wah_story/db/postClass.php on line 1956
+[07-Mar-2020 17:40:45 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1612
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1612): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/db/postClass.php(1958): Post->delImg('extras', NULL, 'extras')
+#2 /home/techmbae/public_html/wah_story/panel/actions/update_home_testimonial_banner.php(5): Post->updateExtras()
+#3 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1612
+[07-Mar-2020 17:43:34 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/techmbae/public_html/wah_story/db/postClass.php on line 1956
+[07-Mar-2020 17:43:34 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1612
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1612): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/db/postClass.php(1958): Post->delImg('extras', NULL, 'extras')
+#2 /home/techmbae/public_html/wah_story/panel/actions/update_home_testimonial_banner.php(5): Post->updateExtras()
+#3 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1612
+[07-Mar-2020 17:44:18 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/techmbae/public_html/wah_story/db/postClass.php on line 1957
+[07-Mar-2020 17:44:18 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:1612
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(1612): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/db/postClass.php(1959): Post->delImg('extras', NULL, 'extras')
+#2 /home/techmbae/public_html/wah_story/panel/actions/update_home_testimonial_banner.php(5): Post->updateExtras()
+#3 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 1612
+[07-Mar-2020 17:56:58 Asia/Calcutta] PHP Warning:  unlink(../../images/extras/BbQC2B51301367267.jpg): No such file or directory in /home/techmbae/public_html/wah_story/db/postClass.php on line 1616
+[10-Mar-2020 13:07:45 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined method Post::updateGenesis() in /home/techmbae/public_html/wah_story/panel/actions/update_genesis.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/techmbae/public_html/wah_story/panel/actions/update_genesis.php on line 5
+[10-Mar-2020 13:22:31 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/techmbae/public_html/wah_story/db/postClass.php on line 2034
+[10-Mar-2020 13:22:31 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/techmbae/public_html/wah_story/db/postClass.php:2053
+Stack trace:
+#0 /home/techmbae/public_html/wah_story/db/postClass.php(2053): PDOStatement->execute()
+#1 /home/techmbae/public_html/wah_story/panel/actions/update_genesis.php(5): Post->updateGenesis()
+#2 {main}
+  thrown in /home/techmbae/public_html/wah_story/db/postClass.php on line 2053
+[28-Apr-2020 19:55:13 Asia/Calcutta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/techmbae/public_html/t/h/wah_story/db/postClass.php:2039) in /home/techmbae/public_html/t/h/wah_story/panel/actions/update_genesis.php on line 27
+[28-Apr-2020 19:55:41 Asia/Calcutta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/techmbae/public_html/t/h/wah_story/db/postClass.php:2039) in /home/techmbae/public_html/t/h/wah_story/panel/actions/update_genesis.php on line 27
+[05-May-2020 10:46:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/3(6)1993997854.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 10:46:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpEkSDtG' to '../images/posts/3(6)1993997854.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 10:46:37 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/3(6)142338964.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 10:46:37 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php1X5eSA' to '../images/posts/3(6)142338964.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 10:47:37 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/4(4)1594979884.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 10:47:37 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpWjlwkh' to '../images/posts/4(4)1594979884.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 11:07:19 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Untitled design(1)890211136.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[05-May-2020 11:07:19 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpRnU9dA' to '../images/posts/Untitled design(1)890211136.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[06-May-2020 11:44:17 Asia/Calcutta] PHP Warning:  unlink(../images/posts/Short-Story-Author-of-Month1339764410.jpg): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 584
+[06-May-2020 11:44:54 Asia/Calcutta] PHP Warning:  unlink(../images/posts/Short-Story-Author-of-Month1339764410.jpg): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 584
+[06-May-2020 11:53:25 Asia/Calcutta] PHP Warning:  unlink(../images/posts/Short-Story-Author-of-Month1339764410.jpg): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 584
+[06-May-2020 11:54:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Untitled design(1)2138815872.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[06-May-2020 11:54:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phplSrNn8' to '../images/posts/Untitled design(1)2138815872.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 986
+[08-May-2020 10:09:41 Asia/Calcutta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/techmbae/public_html/t/h/wah_story/db/postClass.php:2039) in /home/techmbae/public_html/t/h/wah_story/panel/actions/update_genesis.php on line 27
+[08-May-2020 10:11:25 Asia/Calcutta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/techmbae/public_html/t/h/wah_story/db/postClass.php:2126) in /home/techmbae/public_html/t/h/wah_story/panel/actions/update_mission.php on line 27
+[08-May-2020 14:46:07 Asia/Calcutta] PHP Warning:  unlink(../images/posts/BbQC2B51468162339.jpg): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 546
+[08-May-2020 15:22:36 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'slug' in 'field list' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php:1186
+Stack trace:
+#0 /home/techmbae/public_html/t/h/wah_story/db/postClass.php(1186): PDOStatement->execute()
+#1 /home/techmbae/public_html/t/h/wah_story/panel/actions/addCat.php(5): Post->addCat()
+#2 {main}
+  thrown in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1186
+[11-May-2020 12:59:42 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Untitled design (5)578770872.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 12:59:42 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpoxMmxI' to '../images/posts/Untitled design (5)578770872.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:00:12 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Untitled design (5)784282038.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:00:12 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpGNgx3v' to '../images/posts/Untitled design (5)784282038.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:02:45 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Elements clear logo198340683.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:02:45 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpbMgXlu' to '../images/posts/Elements clear logo198340683.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:04:51 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Untitled design (5)1599450207.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:04:51 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php2fjIgh' to '../images/posts/Untitled design (5)1599450207.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 13:05:58 Asia/Calcutta] PHP Warning:  unlink(../images/posts/Untitleddesign(5)1571846976.png): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 635
+[11-May-2020 13:07:09 Asia/Calcutta] PHP Warning:  unlink(../images/posts/Untitleddesign(5)1571846976.png): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 635
+[11-May-2020 13:30:32 Asia/Calcutta] PHP Warning:  unlink(../images/posts/Untitleddesign(5)1571846976.png): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 635
+[11-May-2020 15:50:25 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/testamonial (3)191465105.png): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 15:50:25 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpIIIY61' to '../images/posts/testamonial (3)191465105.png' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1037
+[11-May-2020 19:43:36 Asia/Calcutta] PHP Warning:  move_uploaded_file(../images/posts/Goa-Becah414339888.jpg): failed to open stream: No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1027
+[11-May-2020 19:43:36 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpN6iJNZ' to '../images/posts/Goa-Becah414339888.jpg' in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1027
+[11-May-2020 19:43:36 Asia/Calcutta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/techmbae/public_html/t/h/wah_story/db/postClass.php:1027) in /home/techmbae/public_html/t/h/wah_story/panel/actions/compaign.php on line 52
+[12-May-2020 20:33:53 Asia/Calcutta] PHP Warning:  unlink(../../images/testimonials/arlberg-pass-833326_19201397865678.jpg): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1637
+[12-May-2020 20:35:04 Asia/Calcutta] PHP Warning:  unlink(../../images/testimonials/arlberg-pass-833326_19201397865678.jpg): No such file or directory in /home/techmbae/public_html/t/h/wah_story/db/postClass.php on line 1637
+[08-Sep-2020 13:07:41 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/techmbae/public_html/wahstory.com/db/postClass.php:1067
+Stack trace:
+#0 /home/techmbae/public_html/wahstory.com/db/postClass.php(1067): PDOStatement->execute()
+#1 /home/techmbae/public_html/wahstory.com/panel/actions/compaign.php(7): Post->updateCompaign()
+#2 {main}
+  thrown in /home/techmbae/public_html/wahstory.com/db/postClass.php on line 1067
+[08-Sep-2020 13:08:03 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/techmbae/public_html/wahstory.com/db/postClass.php:1067
+Stack trace:
+#0 /home/techmbae/public_html/wahstory.com/db/postClass.php(1067): PDOStatement->execute()
+#1 /home/techmbae/public_html/wahstory.com/panel/actions/compaign.php(7): Post->updateCompaign()
+#2 {main}
+  thrown in /home/techmbae/public_html/wahstory.com/db/postClass.php on line 1067
+[17-Nov-2020 12:26:13 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[17-Nov-2020 12:26:13 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[17-Nov-2020 12:32:59 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[17-Nov-2020 12:32:59 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:24:25 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:24:25 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:24:29 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:24:29 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:24:36 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:24:36 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:24:45 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:24:45 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:24:55 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:24:55 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:24:58 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:24:58 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:25:21 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:25:21 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:25:46 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:25:46 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:25:51 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:25:51 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[03-Apr-2021 11:26:21 Asia/Calcutta] PHP Notice:  Undefined index: id in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1465
+[03-Apr-2021 11:26:21 Asia/Calcutta] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php:1470
+Stack trace:
+#0 /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php(1470): PDOStatement->execute()
+#1 /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/updateVideo.php(5): Post->updateYoutubeVideos()
+#2 {main}
+  thrown in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 1470
+[13-Jul-2022 13:17:17 Asia/Calcutta] PHP Notice:  Undefined index: crdate in /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/storyofthemonth.php on line 9
+[13-Jul-2022 13:20:14 Asia/Calcutta] PHP Notice:  Undefined index: crdate in /home/w75op26g4yl8/public_html/wahstory.com/panel/actions/storyofthemonth.php on line 9
+[07-Nov-2023 13:20:31 Asia/Calcutta] PHP Notice:  Undefined index: questions in /home/w75op26g4yl8/public_html/wahstory.com/db/postClass.php on line 64
+[04-Mar-2024 12:48:35 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'varified' in 'field list' in /home/wahstory/v2.wahstory.com/db/postClass.php:1987
+Stack trace:
+#0 /home/wahstory/v2.wahstory.com/db/postClass.php(1987): PDOStatement->execute()
+#1 /home/wahstory/v2.wahstory.com/panel/actions/verify.php(7): Post->verifyUser('200')
+#2 {main}
+  thrown in /home/wahstory/v2.wahstory.com/db/postClass.php on line 1987
+[04-Mar-2024 12:49:58 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'varified' in 'field list' in /home/wahstory/v2.wahstory.com/db/postClass.php:2007
+Stack trace:
+#0 /home/wahstory/v2.wahstory.com/db/postClass.php(2007): PDOStatement->execute()
+#1 /home/wahstory/v2.wahstory.com/panel/actions/unverify.php(7): Post->unverifyUser('200')
+#2 {main}
+  thrown in /home/wahstory/v2.wahstory.com/db/postClass.php on line 2007

@@ -1,0 +1,16 @@
+
+
+# Rewrite clean URLs
+# RewriteCond %{REQUEST_FILENAME}.php -f
+
+# RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+# Enable rewrite engine
+RewriteEngine On
+
+# If requested file or folder exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, append .php to the URL
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
