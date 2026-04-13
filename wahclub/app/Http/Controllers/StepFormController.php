@@ -107,6 +107,7 @@ class StepFormController extends Controller
     }
     
     
+
     public function getUserPortfolioBySlug($slugUsername)
     {
 
@@ -220,7 +221,8 @@ class StepFormController extends Controller
     
     
 
-    // Function to savedatainsteps and store 
+ 
+// Function to savedatainsteps and store 
     public function savedatainsteps(Request $request)
     {
 

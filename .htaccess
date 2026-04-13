@@ -1,0 +1,47 @@
+# ==================================================
+# ENABLE REWRITE ENGINE
+# ==================================================
+RewriteEngine On
+
+# ==================================================
+# FORCE HTTPS (SSL REDIRECT)
+# ==================================================
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==================================================
+# REMOVE TRAILING SLASH (EXCEPT DIRECTORIES)
+# ==================================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# ==================================================
+# CORE PHP CLEAN SLUG ROUTING
+# /about-us → index.php?slug=about-us
+# ==================================================
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?slug=$1 [QSA,L]
+
+# ==================================================
+# SPECIFIC OLD ROUTES (YOUR SYSTEM)
+# ==================================================
+RewriteRule ^story/(.*)$ /single.php?slug=$1 [NC,L]
+RewriteRule ^blog/(.*)$ /blog.php?slug=$1 [NC,L]
+RewriteRule ^stories/(.*)$ /stories.php?slug=$1 [NC,L]
+RewriteRule ^search/(.*)$ /stories.php?query=$1 [NC,L]
+
+# ==================================================
+# OLD REDIRECTS
+# ==================================================
+RewriteRule ^wahspotlight/nominee/(.*)$ /story/$1 [R=301,L]
+
+# ==================================================
+# CUSTOM 404 PAGE
+# ==================================================
+ErrorDocument 404 /custom-404-notFound.php
+
+# ==================================================
+# SECURITY SETTINGS
+# ==================================================
+Options -Indexes
