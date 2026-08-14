@@ -930,7 +930,8 @@ function getPostNext($id, $catid)
             
             if($alreadyRegistered == NULL || $_POST["email"] != ''){ 
             
-                    $sql2 = "insert into `users` (`name`, `phone`, `email`, `gender`, `city`, `country`, `linkedin`, `inatagramid`, `bio`, `created_at`, `verified`, `otp`, `isverified`) values (:name, :phone, :email, :gender, :city, :country, :linkedin, :instagram, :bio, :date, 'true', '111111', '1')";
+                    $hashedPassword = password_hash('WAH@Club12', PASSWORD_BCRYPT);
+                    $sql2 = "insert into `users` (`name`, `phone`, `email`, `gender`, `city`, `country`, `linkedin`, `inatagramid`, `bio`, `created_at`, `verified`, `otp`, `isverified`, `password`) values (:name, :phone, :email, :gender, :city, :country, :linkedin, :instagram, :bio, :date, 'true', '111111', '1', :password)";
                         $stm2 = $this->openConn->prepare($sql2);
                     $stm2->bindParam(":name", $name);
                     $stm2->bindParam(":phone", $phone);
@@ -942,11 +943,47 @@ function getPostNext($id, $catid)
                     $stm2->bindParam(":instagram", $instagram);
                     $stm2->bindParam(":bio", $bio);
                     $stm2->bindParam(":date", $date);
+                    $stm2->bindParam(":password", $hashedPassword);
                         
                     
                     $stm2->execute();
                     
                      $insertedId = $this->openConn->lastInsertId();
+                    
+                    if ($this->SecndopenConn instanceof PDO) {
+                    $nameParts = explode(' ', $name);
+                    $fname = $nameParts[0];
+                    $lname = isset($nameParts[1]) ? $nameParts[count($nameParts) - 1] : '';
+                    $slugUsername = $this->createSlug($fname . '-' . $lname);
+                    $baseSlug = $slugUsername;
+                    $slugCount = 1;
+                    $sqlSlugCheck = "SELECT id FROM users WHERE slug_username = :slug LIMIT 1";
+                    $stmSlugCheck = $this->SecndopenConn->prepare($sqlSlugCheck);
+                    $stmSlugCheck->bindParam(":slug", $slugUsername);
+                    $stmSlugCheck->execute();
+                    while ($stmSlugCheck->rowCount()) {
+                        $slugUsername = $baseSlug . '-' . $slugCount;
+                        $slugCount++;
+                        $stmSlugCheck->bindParam(":slug", $slugUsername);
+                        $stmSlugCheck->execute();
+                    }
+                    
+                    $sqlClub = "insert into users(`firstname`, `lastname`, `slug_username`, `phone`, `email`) values(:fname, :lname, :slugUsername, :phone, :email)";
+                    $stmClub = $this->SecndopenConn->prepare($sqlClub);
+                    $stmClub->bindParam(":fname", $fname);
+                    $stmClub->bindParam(":lname", $lname);
+                    $stmClub->bindParam(":slugUsername", $slugUsername);
+                    $stmClub->bindParam(":phone", $phone);
+                    $stmClub->bindParam(":email", $email);
+                    $stmClub->execute();
+                    $ClubId = $this->SecndopenConn->lastInsertId();
+                    
+                    $sqlClubLink = "UPDATE `users` SET `ClubId` = :clubId WHERE id = :userId";
+                    $stmClubLink = $this->openConn->prepare($sqlClubLink);
+                    $stmClubLink->bindParam(":clubId", $ClubId);
+                    $stmClubLink->bindParam(":userId", $insertedId);
+                    $stmClubLink->execute();
+                    }
                     
                     if ($stm2->rowCount()) { 
                         
