@@ -1069,7 +1069,7 @@ class Story extends BaseClass
             
             $slugUsername = $this->createUniqueSlug($fname, $lname);
             
-            $sql = "insert into users(`firstname`, `lastname`, `slug_username`, `phone`, `email`, `photo`) values('$fname', '$lname', '$slugUsername', '$phone', '$email', '$finalImgName')";
+            $sql = "insert into users(`firstname`, `lastname`, `slug_username`, `phone`, `email`, `photo`, `views`) values('$fname', '$lname', '$slugUsername', '$phone', '$email', '$finalImgName', 0)";
             
             $stm = $this->SecndopenConn->prepare($sql);
             $stm->execute();
