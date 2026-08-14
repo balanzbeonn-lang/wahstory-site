@@ -3,6 +3,14 @@
 # ==================================================
 RewriteEngine On
 
+
+# ==================================================
+# BLOCK LINKEDIN PREVIEW BOT
+# ==================================================
+RewriteCond %{HTTP_USER_AGENT} LinkedInBot [NC]
+RewriteRule ^ - [F,L]
+
+
 # ==================================================
 # FORCE HTTPS (optional - already handled in Apache config)
 # ==================================================

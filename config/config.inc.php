@@ -13,7 +13,7 @@
 define('WEBSITE_DATABASE',"wahstory_wahstory");        //EDIT THIS
 define('WEBSITE_HOST',"localhost");         //EDIT THIS
 define('WEBSITE_USER',"root");              //EDIT THIS
-define('WEBSITE_PASS',"s9mQYZwVNjv0xJaK!"); //EDIT THISplssankorsdo!
+define('WEBSITE_PASS',"s9mQYZwGSA57DVED73$^"); //EDIT THISplssankorsdo!
  
 ####################################################
 define('ERROR_REPORTING','on');             //EDIT THIS

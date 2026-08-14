@@ -16,3 +16,4 @@ wahclub/uploads/
 wahclub/storage/
 wahclub/cache/
 wahclub/tmp/
+*.bak-*
