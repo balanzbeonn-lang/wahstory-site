@@ -30,6 +30,8 @@ RewriteRule ^story/(.*)$ /single.php?slug=$1 [NC,L]
 RewriteRule ^blog/(.*)$ /blog.php?slug=$1 [NC,L]
 RewriteRule ^stories/(.*)$ /stories.php?slug=$1 [NC,L]
 RewriteRule ^search/(.*)$ /stories.php?query=$1 [NC,L]
+RewriteRule ^login$ /login.php [L]
+RewriteRule ^logout$ /logout.php [QSA,L]
 
 # ==================================================
 # OLD REDIRECTS
