@@ -968,13 +968,15 @@ function getPostNext($id, $catid)
                         $stmSlugCheck->execute();
                     }
                     
-                    $sqlClub = "insert into users(`firstname`, `lastname`, `slug_username`, `phone`, `email`) values(:fname, :lname, :slugUsername, :phone, :email)";
+                    $views = 0;
+                    $sqlClub = "insert into users(`firstname`, `lastname`, `slug_username`, `phone`, `email`, `views`) values(:fname, :lname, :slugUsername, :phone, :email, :views)";
                     $stmClub = $this->SecndopenConn->prepare($sqlClub);
                     $stmClub->bindParam(":fname", $fname);
                     $stmClub->bindParam(":lname", $lname);
                     $stmClub->bindParam(":slugUsername", $slugUsername);
                     $stmClub->bindParam(":phone", $phone);
                     $stmClub->bindParam(":email", $email);
+                    $stmClub->bindParam(":views", $views);
                     $stmClub->execute();
                     $ClubId = $this->SecndopenConn->lastInsertId();
                     
