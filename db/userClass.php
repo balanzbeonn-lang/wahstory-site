@@ -13,6 +13,20 @@ class User
         date_default_timezone_set("Asia/Calcutta");
     }
 
+    function createSlug($text)
+    {
+        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+        $text = preg_replace('~[^-\w]+~', '', $text);
+        $text = trim($text, '-');
+        $text = preg_replace('~-+~', '-', $text);
+        $text = strtolower($text);
+        if (empty($text)) {
+            return 'n-a';
+        }
+        return $text;
+    }
+
     function userCheck()
     {
         if (!empty($_COOKIE['email']) && !empty($_COOKIE['pass'])) {
@@ -255,23 +269,25 @@ function updateUserPass()
                 if ($fileError === 0) {
                     if (move_uploaded_file($fileTmpName, $fileDest)) {
                         $title = $_POST["title"];
+                        $slug = $this->createSlug($title);
                         $cat = $_POST["cat"];
                         $author = $_POST["author"];
                         $content = $_POST["content"];
-                        $date = date("d M Y");
+                        $date = date("Y-m-d");
                         $quote = $_POST["quote"];
                         $user = $this->getUser();
                         $id = $user["id"];
                         if (!empty($_FILES['video'])) {
-                            $sql = "insert into `stories` (`title`,`category`,`author`,`content`,`img`,`date`,`video`,`userid`,`origin`,`quote`) values (:title,:cat,:author,:content,:finalImgName,:date,:video,:id,'user', :quote)";
+                            $sql = "insert into `stories` (`title`,`slug`,`category`,`author`,`content`,`img`,`date`,`video`,`userid`,`origin`,`quote`,`metakeywords`,`metadescription`,`likes`,`views`,`section`,`status`,`userAction`,`adminAction`) values (:title,:slug,:cat,:author,:content,:finalImgName,:date,:video,:id,'user', :quote,'','',0,0,'home','processing','shown','unvarified')";
                             $stm = $this->openConn->prepare($sql);
                             $video = $this->addVideo();
                             $stm->bindParam(":video", $video);
                         }elseif (empty($_FILES['video'])) {
-                            $sql = "insert into `stories` (`title`,`category`,`author`,`content`,`img`,`date`,`userid`,`origin`,`quote`) values (:title,:cat,:author,:content,:finalImgName,:date,:id,'user', :quote)";
+                            $sql = "insert into `stories` (`title`,`slug`,`category`,`author`,`content`,`img`,`date`,`userid`,`origin`,`quote`,`metakeywords`,`metadescription`,`likes`,`views`,`section`,`status`,`userAction`,`adminAction`) values (:title,:slug,:cat,:author,:content,:finalImgName,:date,:id,'user', :quote,'','',0,0,'home','processing','shown','unvarified')";
                             $stm = $this->openConn->prepare($sql);
                         }
                         $stm->bindParam(":title", $title);
+                        $stm->bindParam(":slug", $slug);
                         $stm->bindParam(":cat", $cat);
                         $stm->bindParam(":author", $author);
                         $stm->bindParam(":content", $content);

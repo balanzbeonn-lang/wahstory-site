@@ -1002,24 +1002,24 @@ function getPostNext($id, $catid)
                         $userID = $insertedId;
                         
                         if (!empty($_FILES['video']) &&  !empty($_FILES['audio'])) {
-                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`video`,`audio`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date, :video, :audio, :quote,'admin','live','varified',0,0)";
+                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`video`,`audio`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`,`section`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date, :video, :audio, :quote,'admin','live','varified',0,0,'home')";
                             $stm = $this->openConn->prepare($sql);
                             $video = $this->addVideo();
                             $stm->bindParam(":video", $video);
                             $audio = $this->addAudio();
                             $stm->bindParam(":audio", $audio);
                         } elseif (!empty($_FILES['video']) && empty($_FILES['audio'])) {
-                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`video`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date,:video, :quote,'admin','live','varified',0,0)";
+                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`video`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`,`section`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date,:video, :quote,'admin','live','varified',0,0,'home')";
                             $stm = $this->openConn->prepare($sql);
                             $video = $this->addVideo();
                             $stm->bindParam(":video", $video);
                         } elseif (empty($_FILES['video']) && !empty($_FILES['audio'])) {
-                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`audio`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date,:audio, :quote,'admin','live','varified',0,0)";
+                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`audio`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`,`section`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date,:audio, :quote,'admin','live','varified',0,0,'home')";
                             $stm = $this->openConn->prepare($sql);
                             $audio = $this->addAudio();
                             $stm->bindParam(":audio", $audio);
                         } elseif (empty($_FILES['video']) && empty($_FILES['audio'])) {
-                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date, :quote,'admin','live','varified',0,0)";
+                            $sql = "insert into `stories` (`title`,`slug`,`metadescription`,`metakeywords`,`category`,`author`,`userid`,`content`,`img`,`date`,`quote`,`origin`,`status`,`adminAction`,`views`,`likes`,`section`) values (:title,:slug,:metadescription,:metakeywords,:cat,:author,:userid,:content,:finalImgName,:date, :quote,'admin','live','varified',0,0,'home')";
                             $stm = $this->openConn->prepare($sql);
                         }
                         $stm->bindParam(":title", $title);
