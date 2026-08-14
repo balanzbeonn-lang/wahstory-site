@@ -4,7 +4,7 @@ class connection
     private $servername = "localhost";
     private $dbname = "wahstory_wahstory";
     private $username = "root";
-    private $password = "s9mQYZwVNjv0xJaK!";
+    private $password = "s9mQYZwGSA57DVED73$^";
     protected $conn;
 
 
@@ -37,7 +37,7 @@ class Secondaryconnection
     private $servername = "localhost";
     private $dbname = "wahstory_wahclub";
     private $username = "root";
-    private $password = "s9mQYZwVNjv0xJaK!";
+    private $password = "s9mQYZwGSA57DVED73$^";
     protected $conn;
 
 

@@ -72,7 +72,7 @@ class Post
         if ($this->adminCheck()) {
             $questions = json_encode($_POST["questions"]);
             $title = $_POST["title"];
-            $date = date("Y-m-d H:i:s");
+            $date = date("d M Y");
             $sql = "insert into `Questions` (`data`,`date`,`title`) values (:questions,:date,:title)";
             $stm = $this->openConn->prepare($sql);
             $stm->bindParam(":questions", $questions);
@@ -91,7 +91,7 @@ class Post
         if ($this->adminCheck()) {
             $questions = json_encode($_POST["questions"]);
             $title = $_POST["title"];
-            $date = date("Y-m-d H:i:s");
+            $date = date("d M Y");
             $id = $_POST["id"];
             $sql = "update `Questions` set `data` = :questions, `date` = :date, `title` = :title where id = $id";
             $stm = $this->openConn->prepare($sql);
@@ -924,7 +924,7 @@ function getPostNext($id, $catid)
                     $linkedin = $_POST["linkedin"];
                     $instagram = $_POST["instagram"];
                     $bio = $_POST["bio"]; 
-                     $date = date("Y-m-d H:i:s");
+                     $date = date("d M Y");
             
             $alreadyRegistered = $this->getUserByEmail($_POST["email"]);
             
@@ -958,7 +958,7 @@ function getPostNext($id, $catid)
                         $content = $_POST["content"];
                         $metadescription = $_POST["metadescription"];
                         $metakeywords = $_POST["metakeywords"];
-                        $date = date("Y-m-d H:i:s");
+                        $date = date("d M Y");
                         
                         $userID = $insertedId;
                         
@@ -1261,7 +1261,7 @@ function getPostNext($id, $catid)
                         $alttext = $_POST["alttext"];
                         
                         $content = $_POST["content"];
-                        $date = date("Y-m-d H:i:s");
+                        $date = date("d M Y");
                         
                         $sql = "insert into `blogs` (`title`,`slug`,`category`,`author`,`metadescription`,`metakeywords`,`alttext`,`content`,`img`,`date`,`origin`,`status`,`adminAction`) values (:title,:slug,:cat,:author,:metadescription,:metakeywords,:alttext,:content,:finalImgName,:date,'admin','live','varified')";
                         
@@ -1326,7 +1326,7 @@ function updateBlog($id)
                         
                         $author = $_POST["author"];
                         $content = $_POST["content"];
-                        $date = date("Y-m-d H:i:s");
+                        $date = date("d M Y");
                         
                         $sql = "update `blogs` set `title` = :title, `slug` = :slug, `metadescription` = :metadescription, `metakeywords` = :metakeywords, `alttext` = :alttext, `author` = :author, `content` = :content, `img` = :finalImgName, `date` = :date where id = $id";
                         
@@ -1368,7 +1368,7 @@ function updateBlog($id)
                     
                 $author = $_POST["author"];
                 $content = $_POST["content"];
-                $date = date("Y-m-d H:i:s");
+                $date = date("d M Y");
                 $sql = "update `blogs` set `title` = :title, `slug` = :slug, `metadescription` = :metadescription, `metakeywords` = :metakeywords, `alttext` = :alttext, `author` = :author, `content` = :content, `date` = :date where id = $id";
                 $stm = $this->openConn->prepare($sql);
                 $stm->bindParam(":title", $title);
@@ -1629,7 +1629,7 @@ function setstoryofthemonth($id)
                             $metakeywords = $_POST["metakeywords"];
                 
                             $quote = $_POST["quote"];
-                            $date = date("Y-m-d H:i:s");
+                            $date = date("d M Y");
                             $sql = "update `stories` set `title` = :title, `slug` = :slug, `quote` = :quote, `category` = :cat, `author` = :author, `content` = :content, `metadescription` = :metadescription, `metakeywords` = :metakeywords, `img` = :finalImgName,`date` = :date where id = $id";
                             $stm = $this->openConn->prepare($sql);
                             $stm->bindParam(":title", $title);
@@ -1668,7 +1668,7 @@ function setstoryofthemonth($id)
                 $metakeywords = $_POST["metakeywords"];
                 
                 $quote = $_POST["quote"];
-                $date = date("Y-m-d H:i:s");
+                $date = date("d M Y");
                 $sql = "update `stories` set `title` = :title, `slug` = :slug, `quote` = :quote, `category` = :cat, `metadescription` = :metadescription, `metakeywords` = :metakeywords, `author` = :author, `content` = :content, `date` = :date where id = $id";
                 $stm = $this->openConn->prepare($sql);
                 $stm->bindParam(":title", $title);
@@ -2940,7 +2940,7 @@ function addGetNotifiedV2()
     
     function addUserByGoogle()
     {
-        $date = date("Y-m-d H:i:s");
+        $date = date("d M Y");
         $sql = "insert into users (google_id, name, email, profile_image, date, varified) values ('$id','$firstname', '$email', '$profile_pic', '$date', 'true')";
         $stm = $this->openConn->prepare($sql);
         $stm->execute();
